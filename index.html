@@ -17,13 +17,13 @@
         <p>Got a question? Get in touch at +44 12345 123456</p>
     </div>
 
-    <nav id="navbar">
+    <nav class="top-nav" id="navbar">
         <div class="nav-left">
             <a href="#" class="lifeline">Lifeline</a>
         </div>
         <button id="hamburger-menu" class="icon fa-lg"></button>
         <div>
-            <ul id="page-links" role="list">
+            <ul class="top-links" id="page-links" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Volunteer</a></li>
@@ -31,86 +31,126 @@
             </ul>
         </div>
     </nav>
-    <section class="hero all">
-        <div class="hero-content">
-            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis?</p>
-            <a>I am a button</a>
-        </div>
-    </section>
-
-    <section class="cards all">
-        <div class="card about">
-            <h2>About us</h2>
-            <div class="card-content">
-                <h3>Who are we</h3>
-                <p>We are a volunteer group of medics dedicated to helping you during times where our NHS is overbore</p>
-                <a href="#" class="link-button">
+    <main>
+        <section class="hero all">
+            <div class="hero-content">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis?</p>
+                <a>I am a button</a>
+            </div>
+        </section>
+        <section class="cards all">
+            <div class="card about">
+                <h2>About us</h2>
+                <div class="card-content">
+                    <h3>Who are we</h3>
+                    <p>We are a volunteer group of medics dedicated to helping you during times where our NHS is overbore</p>
+                    <a href="#" class="link-button">
+                        Button
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="card events">
+                <h2>Events</h2>
+                <div class="card-content">
+                    <h3>Our work</h3>
+                    <p>See where we've been so far and what we get up to</p>
+                    <a href="#" class="link-button">
+                        Button
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="card help">
+                <h2>Volunteering</h2>
+                <div class="card-content">
+                    <h3>We need your help</h3>
+                    <p>We dont receive any funding and we're all volunteers here, we'd greatly appreciate your help</p>
+                    <a href="#" class="link-button">
+                        Button
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="our-work">
+            <div class="stats-introductory">
+                <h2>Our numbers</h2>
+                <p>Our efforts in numbers for you to see how we're helping out</p>
+                <!-- <a href="#" class="link-button">
                     Button
                     <div class="line"></div>
-                </a>
+                </a> -->
             </div>
-        </div>
-        <div class="card events">
-            <h2>Events</h2>
-            <div class="card-content">
-                <h3>Our work</h3>
-                <p>See where we've been so far and what we get up to</p>
-                <a href="#" class="link-button">
-                    Button
-                    <div class="line"></div>
-                </a>
+            <div class="stats">
+                <div class="stat">
+                    <div>
+                        <p class="icon one">200</p>
+                    </div>
+                    <p>Some statistic</p>
+                </div>
+                <div class="stat">
+                    <div>
+                        <p class="icon two">144</p>
+                    </div>
+                    <p>Some statistic</p>
+                </div>
+                <div class="stat">
+                    <div>
+                        <p class="icon three">37</p>
+                    </div>
+                    <p>Some statistic</p>
+                </div>
+                <div class="stat">
+                    <div>
+                        <p class="icon four">66</p>
+                    </div>
+                    <p>Some statistic</p>
+                </div>
             </div>
-        </div>
-        <div class="card help">
-            <h2>Volunteering</h2>
-            <div class="card-content">
-                <h3>We need your help</h3>
-                <p>We dont receive any funding and we're all volunteers here, we'd greatly appreciate your help</p>
-                <a href="#" class="link-button">
-                    Button
-                    <div class="line"></div>
-                </a>
+        </section>
+        <section class="testimonials">
+            <h2>Patient testimonies</h2>
+            <p>See what people have to say about us</p>
+            <div class="testimony-section">
+                <div class="quote">
+                    <div class="icon speech"></div>
+                    <p>A huge thank you from me personally and all the trustees. We were so glad to have found you and the reassurance of you all being on there on the day was a huge relief!</p>
+                </div>
+                <div class="quote">
+                    <div class="icon speech"></div>
+                    <p>Families in our care cannot thank the members of lifeline ambulance enough. they give invaluable help to our patients and continue to support them</p>
+                </div>
+                <div class="quote">
+                    <div class="icon speech"></div>
+                    <p>Words can be like x-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="our-work">
-        <div class="stats-introductory">
-            <h2>Our numbers</h2>
-            <p>Our efforts in numbers for you to see how we're helping out</p>
-            <!-- <a href="#" class="link-button">
-                Button
-                <div class="line"></div>
-            </a> -->
-        </div>
-        <div class="stats">
-            <div class="stat">
-                <div>
-                    <p class="icon one">200</p>
-                </div>
-                <p>Some statistic</p>
+    <footer>
+        <img src="images/lifeline-resized.png" alt="Lifeline charity logo">
+        <nav class="footer-nav">
+            <ul role="list">
+                <!-- <li><h4>Context</h4></li> -->
+                <li><a href="#">Some link</a></li>
+                <li><a href="#">Some link</a></li>
+                <li><a href="#">Some link</a></li>
+                <li><a href="#">Some link</a></li>
+            </ul>
+            <div class="socials">
+                    <a href="#" class="fb"><img src="images/icon-facebook.svg" alt="Lifeline facebook icon link"></a>
+                    <a href="#" class="ig"><img src="images/icon-instagram.svg" alt="Lifeline instagram icon link"></a>
+                    <a href="#" class="twitter"><img src="images/icon-twitter.svg" alt="Lifeline twitter icon link"></a>
             </div>
-            <div class="stat">
-                <div>
-                    <p class="icon two">144</p>
-                </div>
-                <p>Some statistic</p>
-            </div>
-            <div class="stat">
-                <div>
-                    <p class="icon three">37</p>
-                </div>
-                <p>Some statistic</p>
-            </div>
-            <div class="stat">
-                <div>
-                    <p class="icon four">66</p>
-                </div>
-                <p>Some statistic</p>
-            </div>
-        </div>
-    </section>
+        </nav>
 
+        <div class="attribution">
+            <p>Website built by <a href="https://github.com/xavCS">xavCS</a></p>
+        </div>
+
+    </footer>
 </body>
 </html>
