@@ -1,0 +1,346 @@
+:root {
+    --ff-main: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Rubik', sans-serif;
+
+    --head-level-one: 3.0625rem;
+    --head-level-two: 2.4375rem;
+    --head-level-three: 1.9375rem;
+    --head-level-four: 1.5625rem;
+    --head-level-five: 1.25rem;
+
+    --radius: 3px;
+
+    --neutral-100: hsl(240, 8%, 26%);
+    --neutral-200: hsla(240, 8%, 26%, 0.541);
+    --neutral-300: hsla(240, 8%, 26%, 0.105);
+    --neutral-400: hsla(240, 5%, 19%, 0.131);
+    
+    
+    --accent-300: hsl(164, 100%, 21%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--ff-main);
+    overflow-x: hidden;
+    /* background-color: var(--neutral-300); */
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: var(--neutral-100);
+    margin-right: 1rem;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.contact-bar {
+    border-bottom: 1px solid var(--neutral-200);
+    text-align: center;
+    color: var(--neutral-100);
+    font-weight: 500;
+    font-size: 14px;
+    background-color: white;
+}
+
+#hamburger-menu::before {
+    font: var(--fa-font-solid);
+    content: "\f0c9";
+    margin-inline-end: 2rem;
+}
+
+nav {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    position: relative;
+    padding-block: 1rem;
+    box-shadow: -2px 17px 17px -9px #7C7C7C;
+    background-color: white;
+}
+
+.nav-left {
+    margin-inline: 2rem auto; 
+}
+
+.nav-left a {
+    color: var(--accent-300);
+    font-size: var(--head-level-five);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#hamburger-menu {
+    color: var(--neutral-100);
+}
+
+ul {
+    list-style-type: none;
+    position:absolute;
+    box-shadow: -2px 17px 17px -9px #7C7C7C;
+    left:0;
+    top: 3.875rem;
+    width: 100%;
+    transition: height 400ms ease-in, padding 400ms ease, border-color 400ms ease 0.5s;
+    overflow: hidden;
+    height: 0;
+    background-color: white;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-top: 1px solid rgba(255, 0, 0, 0);
+}
+
+ul > * {
+    padding-inline-start: 2rem;
+}
+
+li a {
+    color: var(--neutral-100);
+    font-size: var(--head-level-five);
+    font-weight: 500;
+}
+
+.unhide {
+    height: 12rem;
+    padding-block: 1.25rem 1rem ;
+    border-top: 1px solid var(--neutral-300);
+    z-index: 9999
+}
+
+/* .unhide::before {
+    content:"";
+    border-top: 1px solid red;
+    width: 100%;
+    padding-inline:0;
+} */
+
+.hero {
+    height: 400px;
+    background-image: url('images/first-aid-2.webp');
+    background-size: cover;
+    background-position: 60%;
+    margin-bottom: 2rem;
+}
+
+.hero-content{
+    text-align: center;
+    color:white;
+    padding-block-start: 13rem;
+    padding-inline: 1rem;
+    font-weight: 600;
+}
+
+.hero-content h1{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-size: var(--head-level-three);
+}
+
+.hero-content p{
+    margin-bottom: 2rem;
+}
+
+.hero-content a {
+    background-color: var(--accent-300,rgb(255, 255, 255));
+    color: white;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.cards {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card { 
+    height: 350px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: 50%;
+    padding-inline: 1.5rem;
+    margin-inline: 1rem;
+}
+
+.card-content {
+    margin-bottom: 1rem;
+}
+
+.card > h2 {
+    margin-bottom: auto;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--head-level-four);
+    font-weight: 800;
+}
+
+.card-content h3 {
+    font-size: var(--head-level-five);
+    font-weight:600;
+    margin-bottom: .5rem
+}
+
+.card-content p {
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.link-button {
+    /* box-sizing: content-box; */
+    display:inline-block;
+    background-color: var(--accent-300);
+    padding-inline: 1.25rem;
+    padding-block: 0.75rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%, 0 93%);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color:white;
+    position: relative;
+    z-index: 900;
+}
+
+.line {
+    position:absolute;
+    background-color: white;
+    height: 100%;
+    width:1px;
+    right: 0;
+    top: 0;
+}
+
+.about {
+    background-image: url('images/team.webp');
+}
+
+.events {
+    background-image: url('images/fa-kit.webp');
+}
+
+.help {
+    background-image: url('images/help.webp');
+}
+
+.our-work {
+    display:flex;
+    background-color: var(--neutral-400);
+    margin-top: 2rem;
+    /* color: var(--neutral-100); */
+    flex-direction: column;
+}
+
+.stats-introductory {
+    text-align: center;
+    margin-top: 1rem;
+    padding-inline: 1rem;
+}
+
+.stats-introductory h2 {
+    font-size: var(--head-level-four);
+    font-weight: 600
+}
+
+.stats-introductory p{
+    font-family: var(--ff-secondary);
+}
+
+.stats {
+    font-size: 3.5rem;
+    flex-basis: 100%;
+    margin-top: 2rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.stat div p {
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+}
+
+.stat > p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* font-family: var(--ff-secondary); */
+}
+
+.one::before {
+    font: var(--fa-font-solid);
+    content: "\f017";
+}
+
+.two::before {
+    font: var(--fa-font-solid);
+    content: "\f073";
+}
+
+.three::before {
+    font: var(--fa-font-solid);
+    content: "\f500";
+}
+
+.four::before {
+    font: var(--fa-font-solid);
+    content: "\f479";
+}
+
+@media (min-width: 1260px) {
+    #hamburger-menu {
+        display:none;
+    }
+}
+
