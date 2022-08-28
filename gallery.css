@@ -1,0 +1,39 @@
+a[href="gallery.html"] {
+    color: var(--accent-300);
+    font-weight: 600;
+}
+
+.intro {
+    color: var(--neutral-100);
+    padding-inline: 1rem;
+    padding-block-start: 1.25rem;
+}
+
+.intro h1 {
+    font-size: var(--head-level-three)
+}
+
+.intro p {
+    font-weight: 400;
+    font-family: var(--ff-secondary);
+}
+
+.gallery {
+    padding-block: 5rem;
+    padding-inline: 1rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    position:relative;
+}
+
+.gallery > * {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+
+    min-height: 300px;
+    object-fit: cover;
+}
