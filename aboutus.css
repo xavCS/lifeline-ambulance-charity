@@ -80,7 +80,9 @@ a[href="#bio"]::after {
 @media (min-width: 1260px) {
 
     .team {
-        padding-inline-start: 15rem;
+        padding-inline-start: 35rem;
+        background-position: initial;
+        padding-block-end: 4rem;
     }
 
     .team h1 {
