@@ -8,8 +8,8 @@ button[type="submit"] {
 }
 
 main { 
-    margin-top: 2rem;
-    margin-inline: 1rem;
+    padding-top: 2rem;
+    padding-inline: 1rem;
     text-align: center;
     color: var(--neutral-100);
 }
@@ -64,4 +64,49 @@ button[type=submit]{
 button[type=submit]:hover,
 button[type=submit]:focus{ 
     background-color: var(--accent-400);
+}
+
+@media (min-width: 1260px) {
+
+    html{ 
+        height:100%;
+    }
+
+    body{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    main{ 
+        padding-block-end: 10.25rem;
+    }
+
+
+    footer {
+        margin-top: auto;
+    }
+
+    form {
+        gap: 2rem;
+    }
+
+    form p {
+        text-align: center;
+    }
+
+    .form-content {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .form-content > * {
+        max-width: 40%;
+    }
+
+    button[type="submit"] {
+        max-width: 10%;
+    }
 }

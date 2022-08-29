@@ -37,3 +37,22 @@ a[href="gallery.html"] {
     min-height: 300px;
     object-fit: cover;
 }
+
+@media (min-width: 1260px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding-block: 5rem 10rem
+    }
+    
+    .gallery > * {
+        height: 400px;
+        aspect-ratio: 16 / 9;
+        transition: transform 300ms ease;
+    }
+
+    /* .gallery > *:hover {
+        transform: scale(1.2);
+        border-radius: 3px;
+    } */
+}
