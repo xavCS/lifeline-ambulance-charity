@@ -84,8 +84,8 @@ a[href="#bio"]::after {
     }
 
     .team h1 {
-        font-size: var(--head-level-one);
-        font-weight: 700;
+        font-size: var(--head-level-two);
+        font-weight:600;
     }
 
     .team p {
